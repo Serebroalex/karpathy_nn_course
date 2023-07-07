@@ -141,8 +141,6 @@ class Block(nn.Module):
         x = x + self.ffwd(self.ln2(x))
         return x
 
-
-# a simple bigram model
 class TransformerLanguageModel(nn.Module):
     
     def __init__(self, vocab_size):
